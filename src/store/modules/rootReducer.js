@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 
-import auth from './auth/reducer';
+import pokemons from './pokemons/reducer';
+import status from './status/reducer';
 
 export default combineReducers({
-  auth,
+  pokemons,
+  status,
 });
