@@ -68,7 +68,7 @@ export const Pokemon = styled(Link)`
   width: 100%;
   height: 115px;
   border-radius: 8px;
-  background-color: #80bdff;
+  background-color: #b5b9c4;
   margin-bottom: 50px;
   padding: 20px;
   display: flex;
