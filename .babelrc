@@ -1,0 +1,14 @@
+{
+  "presets": ["latest", "react", "stage-0"],
+  "plugins": [
+    "transform-runtime",
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathPrefix": "~",
+        "rootPathSuffix": "src"
+      }
+    ],
+    ["@babel/plugin-proposal-optional-chaining", { "loose": false }]
+  ]
+}
