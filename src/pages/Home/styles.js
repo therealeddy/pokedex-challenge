@@ -27,7 +27,39 @@ export const Container = styled.div`
     font-size: 16px;
     line-height: 19px;
     color: #747476;
-    margin-bottom: 50px;
+  }
+  form {
+    position: relative;
+    input {
+      width: 100%;
+      height: 50px;
+      background: #f2f2f2;
+      border-radius: 10px;
+      margin-bottom: 50px;
+      border: 0px solid;
+      padding: 0 15px 0 50px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      color: #747476;
+
+      &::placeholder {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #747476;
+      }
+    }
+    .search {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      z-index: 100;
+      background-color: transparent;
+    }
   }
 `;
 
