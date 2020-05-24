@@ -1,17 +1,13 @@
 import React from 'react';
-import { Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
-import { SignIn } from '~/pages';
-
-import Route from './Routes';
+import { Home, Pokemon } from '~/pages';
 
 export default function Routes() {
   return (
     <Switch>
-      <Switch>
-        <Route path="/" exact component={SignIn} />
-        <Route path="/dashboard" component={SignIn} isPrivate />
-      </Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/pokemon/:id" component={Pokemon} />
     </Switch>
   );
 }

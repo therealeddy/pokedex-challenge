@@ -1,1 +1,2 @@
-export { default as Rocket } from './Rocket';
+export { default as Loading } from './Loading';
+export { default as Pagination } from './Pagination';
