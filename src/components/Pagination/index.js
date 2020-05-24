@@ -3,6 +3,8 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
 import PropTypes from 'prop-types';
 
+import { useColors } from '~/hooks/theme';
+
 import { Container } from './styles';
 
 export default function Pagination({
@@ -12,6 +14,7 @@ export default function Pagination({
   setPaged,
 }) {
   const pageNumbers = [];
+  const colors = useColors();
 
   let cont = 0;
   let paged = 0;
@@ -43,7 +46,7 @@ export default function Pagination({
               onClick={() => setPaged(currentPage - 1)}
               disabled={currentPage === 1}
             >
-              <MdKeyboardArrowLeft size={30} color="#80bdff" />
+              <MdKeyboardArrowLeft size={30} color={colors.water} />
             </button>
           </li>
           {pageNumbers.map((number) => (
@@ -69,7 +72,7 @@ export default function Pagination({
               onClick={() => setPaged(currentPage + 1)}
               disabled={currentPage === totalPages}
             >
-              <MdKeyboardArrowRight size={30} color="#80bdff" />
+              <MdKeyboardArrowRight size={30} color={colors.water} />
             </button>
           </li>
         </>

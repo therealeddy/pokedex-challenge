@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { Loading } from '~/components';
+import { useColors } from '~/hooks/theme';
 import { getStatusRequest } from '~/store/modules/status/actions';
 import documentTitle from '~/utils/documentTitle';
 import { isEmpty } from '~/utils/object';
@@ -13,6 +14,8 @@ import { Container, Progress } from './styles';
 
 export default function Pokemon({ match }) {
   const { params } = match;
+
+  const colors = useColors();
 
   documentTitle('Pokemon');
 
@@ -24,8 +27,6 @@ export default function Pokemon({ match }) {
     dispatch(getStatusRequest(params.id));
   }, [dispatch, params]);
 
-  console.tron.log(pokemon);
-
   return (
     <>
       {loading ? (
@@ -35,7 +36,7 @@ export default function Pokemon({ match }) {
       ) : (
         !isEmpty(pokemon) && (
           <Container
-            className={pokemon.types[pokemon.types.length - 1].type.name}
+            type={colors[pokemon.types[pokemon.types.length - 1].type.name]}
           >
             <div className="container">
               <div className="top">
