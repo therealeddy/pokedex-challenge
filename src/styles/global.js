@@ -1,9 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
-import './bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
+import './bootstrap.min.css';
 
 export default createGlobalStyle`
+
+  .Toastify__close-button {
+    max-width: 20px;
+  }
 
   * {
     margin: 0;

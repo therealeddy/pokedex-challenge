@@ -9,24 +9,24 @@ export const Container = styled.ul`
     &.page-item {
       margin-right: 15px;
       button {
-        font-family: 'SF Pro Display', sans-serif;
+        font-family: ${({ theme }) => theme.fonts.primary};
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
         line-height: 20px;
-        color: #252525;
+        color: ${({ theme }) => theme.colors.black};
         background-color: transparent;
         border: 0px solid;
         outline: none;
         padding: 10px;
         transition: all 0.4s ease-in-out;
         &:hover {
-          box-shadow: inset 0 -5px 0 0 #80bdff;
+          box-shadow: inset 0 -5px 0 0 ${({ theme }) => theme.colors.water};
         }
       }
       &.active {
         button {
-          box-shadow: inset 0 -5px 0 0 #80bdff;
+          box-shadow: inset 0 -5px 0 0 ${({ theme }) => theme.colors.water};
         }
       }
     }

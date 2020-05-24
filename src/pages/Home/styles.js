@@ -13,43 +13,43 @@ export const Container = styled.div`
   width: 100%;
   padding-top: 80px;
   h1 {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: ${({ theme }) => theme.fonts.primary};
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
-    color: #17171b;
+    color: ${({ theme }) => theme.colors.black};
   }
   p {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: ${({ theme }) => theme.fonts.primary};
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #747476;
+    color: ${({ theme }) => theme.colors.normal};
   }
   form {
     position: relative;
     input {
       width: 100%;
       height: 50px;
-      background: #f2f2f2;
+      background: ${({ theme }) => theme.colors.whiteLight};
       border-radius: 10px;
       margin-bottom: 50px;
       border: 0px solid;
       padding: 0 15px 0 50px;
-      font-family: 'SF Pro Display', sans-serif;
+      font-family: ${({ theme }) => theme.fonts.primary};
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
-      color: #747476;
+      color: ${({ theme }) => theme.colors.normal};
 
       &::placeholder {
-        font-family: 'SF Pro Display', sans-serif;
+        font-family: ${({ theme }) => theme.fonts.primary};
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
-        color: #747476;
+        color: ${({ theme }) => theme.colors.normal};
       }
     }
     .search {
@@ -68,7 +68,7 @@ export const Pokemon = styled(Link)`
   width: 100%;
   height: 115px;
   border-radius: 8px;
-  background-color: #80bdff;
+  background-color: ${({ theme }) => theme.colors.normal};
   margin-bottom: 50px;
   padding: 20px;
   display: flex;
@@ -84,7 +84,7 @@ export const Pokemon = styled(Link)`
     opacity: 0.7;
   }
   .id {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: ${({ theme }) => theme.fonts.primary};
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -92,12 +92,12 @@ export const Pokemon = styled(Link)`
     color: rgba(23, 23, 27, 0.6);
   }
   h2 {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: ${({ theme }) => theme.fonts.primary};
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
-    color: #ffffff;
+    color: ${({ theme }) => theme.colors.white};
   }
   img {
     display: block;
