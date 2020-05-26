@@ -41,7 +41,7 @@ Após isto, basta rodar o comando ```yarn start``` para inicializar o projeto.
 
 ## License
 
-MIT © **[React Eddy](LICENSE)**
+MIT © **[License](LICENSE)**
 
 ## Show your support
 
