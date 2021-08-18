@@ -1,5 +1,5 @@
 <h1 align="center">
-  🚀 Challenge Front End | Pokédex 🚀
+ 💻 Pokédex 💻
 </h1>
 
 <br>
@@ -15,7 +15,7 @@
 
 ## Overview
 
-Challenge Front End Pokédex in ReactJS.
+Challenge Frontend Pokédex in React.
 
 - **[Installation](#installation)**
 - **[Author](#author)**
